@@ -1,0 +1,16 @@
+<h2>Productos</h2>
+
+<div *ngFor="let producto of productos">
+    <h3>
+        <a [title]="producto.nombre + ' details'">
+            {{producto.nombre}}
+        </a>
+    </h3>
+    <p *ngIf="producto.descripcion">
+        Descripcion: {{producto.descripcion}}
+    </p>
+    <button (click)="share()">
+        Compartir
+    </button>
+
+</div>
