@@ -10,6 +10,7 @@ import { productos } from "../productos";
 export class ProductDetailsComponent implements OnInit {
 
   producto;
+
   constructor(
     private route: ActivatedRoute,
   ) { }
